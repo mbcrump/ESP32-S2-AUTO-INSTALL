@@ -26,7 +26,7 @@ h1:before {
 
 #home h1:before, .home-link:before { content: '\f015'; }
 #install h1:before, .install-link:before { content: '\f019'; }
-#video h1:before, .video-link:before { content: '\f167'; }
+#video h1:before, .video-link:before { content: '\f03d'; }
 
 p {
   margin: 0 0 1em;
