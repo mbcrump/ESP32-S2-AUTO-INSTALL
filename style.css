@@ -111,8 +111,8 @@ p {
   #menu a:hover span { opacity: 1; }
   
   #menu .home-link:hover:before, #menu .home-link.active:before { color: #47a0e5; }
-  #menu .install-link:hover:before, #menu .about-link.active:before { color: #d94a53; }
-  #menu .video-link:hover:before, #menu .contact-link.active:before { color: #d94a53; }
+  #menu .install-link:hover:before, #menu .install-link.active:before { color: #d94a53; }
+  #menu .video-link:hover:before, #menu .video-link.active:before { color: #d94a53; }
 }
 
 /* -- Content Area CSS -- */
@@ -123,7 +123,7 @@ footer p { font-size: .75em; text-align: center; }
 
 #home { background: #47a0e5; padding-top: 7em; }
 #install { background: #5ebd66; }
-#video { background: #bfa5c4; }
+#video { background: #d94a53; }
 
 label { display: block; font-size: .75em; margin: 0 0 .25em .5em; }
 input, textarea { margin: 0 0 1em; padding: .5em; outline: 0; border: 1px solid #666; width: 75%; max-width: 400px; font-family: 'Open Sans'; }
