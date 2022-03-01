@@ -1,0 +1,137 @@
+* { box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans';
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0 0 1em;
+}
+
+h1:before {
+  font-family: 'FontAwesome';
+  color: #fff;
+  margin-right: .5em;
+}
+
+#home h1:before, .home-link:before { content: '\f015'; }
+#about h1:before, .about-link:before { content: '\f075'; }
+#portfolio h1:before, .portfolio-link:before { content: '\f0f2'; }
+#blog h1:before, .blog-link:before { content: '\f09e'; }
+#contact h1:before, .contact-link:before { content: '\f0e0'; }
+
+p {
+  margin: 0 0 1em;
+  line-height: 1.25em;
+  text-align: justify;
+}
+
+/* -- Menu CSS -- */
+
+#menu {
+  position: fixed;
+  top: 0; left: 0;
+  width: 0; height: 70px;
+  padding: 1em 3em;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+#menu div { width: 9999px; }
+
+.icon {
+  font-family: 'FontAwesome';
+  color: #fff;
+  font-size: 1.5em;
+  cursor: pointer;
+  display: block;
+  position: fixed;
+  top: 17px; left: 22px;
+  z-index: 21;
+}
+
+.icon:before { content: '\f0c9'; }
+
+#menu a:before {
+  font-family: 'FontAwesome';
+  margin-right: .5em;
+}
+
+#menu.off a { display: none; }
+
+#menu.on {
+  background: rgba(0,0,0,0.75);
+  width: 100%;
+}
+
+#menu.on a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 1em;
+  padding: 0;
+  font-size: .75em;
+  color: #fff;
+  cursor: pointer;
+}
+
+#menu.on a:before { display: none; }
+
+#menu.on a:hover, #menu.on a.active {
+  color: #888;
+  padding-bottom: 1px;
+}
+
+@media screen and (min-width: 43.75em) {
+  .icon { display: none; }
+  #menu {
+    width: auto; height: auto;
+    padding: 0;
+    background: 0;
+    top: 20px;
+  }
+  #menu a { 
+    display: block;
+    width: 60px; height: 50px;
+    padding: .2em .5em;
+    cursor: pointer;
+    overflow: hidden;
+    background: rgba(0,0,0,.75);
+  }
+  #menu a:before { font-size: 1.5em; transition: color 0.2s; }
+  #menu a:hover { width: 200px; }
+  #menu a span { opacity: 0; }
+  #menu a:hover span { opacity: 1; }
+  
+  #menu .home-link:hover:before, #menu .home-link.active:before { color: #47a0e5; }
+  #menu .about-link:hover:before, #menu .about-link.active:before { color: #d94a53; }
+  #menu .portfolio-link:hover:before, #menu .portfolio-link.active:before { color: #f59416; }
+  #menu .blog-link:hover:before, #menu .blog-link.active:before { color: #5ebd66; }
+  #menu .contact-link:hover:before, #menu .contact-link.active:before { color: #bfa5c4; }
+}
+
+/* -- Content Area CSS -- */
+
+section { padding: 3em 2em; }
+footer { padding: 2em 0 .25em; background: #666; }
+footer p { font-size: .75em; text-align: center; }
+
+#home { background: #47a0e5; padding-top: 7em; }
+#about { background: #d94a53; }
+#portfolio { background: #f59416; }
+#blog { background: #5ebd66; padding-top: 7em; }
+#contact { background: #bfa5c4; }
+
+label { display: block; font-size: .75em; margin: 0 0 .25em .5em; }
+input, textarea { margin: 0 0 1em; padding: .5em; outline: 0; border: 1px solid #666; width: 75%; max-width: 400px; font-family: 'Open Sans'; }
+input[type="submit"] { background: #47a0e5; width: auto; border: 0; padding: .5em 1em; font-size: .8em; color: #fff; cursor: pointer; transition: background 0.5s; }
+input[type="submit"]:hover { background: #3F8FCC; }
