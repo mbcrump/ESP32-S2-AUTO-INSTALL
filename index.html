@@ -1,6 +1,34 @@
 <!DOCTYPE html>
+<head>
+   <link rel="stylesheet" href="//weloveiconfonts.com/api/?family=fontawesome" />
+  <link rel="stylesheet" href="style.css">
+</head>
 <html>
+<link rel="stylesheet" href="//weloveiconfonts.com/api/?family=fontawesome" />
+
+<span class="icon"></span>
+<nav id="menu" class="off">
+    <div>
+	  <a onclick="animatescroll('#home');" class="home-link active">
+	  	<span>Home</span>
+	  </a>
+	  <a onclick="animatescroll('#about');" class="about-link">
+	  	<span>About</span>
+	  </a>
+	  <a onclick="animatescroll('#portfolio');" class="portfolio-link">
+	  	<span>Portfolio</span>
+	  </a>
+	  <a onclick="animatescroll('#blog');" class="blog-link">
+	  	<span>Blog</span>
+	  </a>
+	  <a onclick="animatescroll('#contact');" class="contact-link">
+	  	<span>Contact</span>
+	  </a>
+    </div>
+</nav>
 <body>
+    <section id="home">
+  <div class="container">
     <h1>ESP32-S2 Stooged 2 Minute Install</h1><br><br>
     <p>A version of the <a href="https://github.com/stooged/ESP32-Server-900u">ESP32-S2 Server 9.00</a> code created by Stooged.<br>
        Inspired and created after watching this video by <a href="https://www.youtube.com/watch?v=YveqTTl0w24">Brian Lough</a>.<br>
@@ -31,7 +59,8 @@
         Your browser does not support the Web Serial API. Try the latest Chrome browser (Version 98.0.4758.102 (Official Build) (64-bit)
 is what I used)
     </div>
-    
+  </div>
+</section>    
 
     <script>
         if(navigator.serial){
@@ -44,5 +73,5 @@ is what I used)
     </script>
 
 </body>
-
+<script src="main.js"></script>
 </html>
