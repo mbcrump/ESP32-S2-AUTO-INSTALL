@@ -25,8 +25,8 @@ h1:before {
 }
 
 #home h1:before, .home-link:before { content: '\f015'; }
-#about h1:before, .install-link:before { content: '\f019'; }
-#contact h1:before, .video-link:before { content: '\f167'; }
+#install h1:before, .install-link:before { content: '\f019'; }
+#video h1:before, .video-link:before { content: '\f167'; }
 
 p {
   margin: 0 0 1em;
@@ -112,7 +112,7 @@ p {
   
   #menu .home-link:hover:before, #menu .home-link.active:before { color: #47a0e5; }
   #menu .install-link:hover:before, #menu .about-link.active:before { color: #d94a53; }
-  #menu .video-link:hover:before, #menu .contact-link.active:before { color: #bfa5c4; }
+  #menu .video-link:hover:before, #menu .contact-link.active:before { color: #d94a53; }
 }
 
 /* -- Content Area CSS -- */
