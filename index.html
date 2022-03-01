@@ -26,7 +26,7 @@
 <body>
     <section id="home">
   <div class="container">
-    <h1>ESP32-S2 Stooged 2 Minute Install</h1><br><br>
+    <h1>ESP32-S2 Web Installer for PS4 Homebrew</h1><br><br>
     <p>A web installer for a modified version of the <a href="https://github.com/stooged/ESP32-Server-900u">ESP32-S2 Server 9.00</a> created by Stooged.<br><br>
        I learned about the web installer method after watching this video by <a href="https://www.youtube.com/watch?v=YveqTTl0w24">Brian Lough</a>.<br><br>
 
@@ -35,8 +35,6 @@
        <li>USB Wait Time is now at 3 seconds vs 10 seconds</li>
 <br>
     </p>
-
-    <br>
 
 	  <p><b>Note:</b> Payloads are not included in this release. They can be added by connecting to this device via WiFi and 
         navigating to the <a href="http://10.1.1.1/admin.html">admin.html</a> web interface. <br>
@@ -53,7 +51,7 @@
             src="https://unpkg.com/esp-web-tools@7.1.0/dist/web/install-button.js?module"></script>
         <esp-web-install-button id="installButton" manifest="bins/manifest.json"></esp-web-install-button>
         <br><br><br><br>
-        <span>NOTE: Close the Arduino IDE or anything that uses the COM port or this won't work!</span>
+         <p><b>Note:</b> Close the Arduino IDE or anything that uses the COM port or this won't work!</p>
     </div>
 	    <div id="notSupported" style="display: none;">
 		Your browser does not support the Web Serial API. Try the latest Chrome browser (Version 98.0.4758.102 (Official Build) (64-bit)
