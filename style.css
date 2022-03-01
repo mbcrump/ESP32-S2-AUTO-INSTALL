@@ -25,8 +25,8 @@ h1:before {
 }
 
 #home h1:before, .home-link:before { content: '\f015'; }
-#about h1:before, .install-link:before { content: '\f075'; }
-#contact h1:before, .contact-link:before { content: '\f0e0'; }
+#about h1:before, .install-link:before { content: '\f019'; }
+#contact h1:before, .video-link:before { content: '\f167'; }
 
 p {
   margin: 0 0 1em;
@@ -112,7 +112,7 @@ p {
   
   #menu .home-link:hover:before, #menu .home-link.active:before { color: #47a0e5; }
   #menu .install-link:hover:before, #menu .about-link.active:before { color: #d94a53; }
-  #menu .contact-link:hover:before, #menu .contact-link.active:before { color: #bfa5c4; }
+  #menu .video-link:hover:before, #menu .contact-link.active:before { color: #bfa5c4; }
 }
 
 /* -- Content Area CSS -- */
@@ -122,8 +122,8 @@ footer { padding: 2em 0 .25em; background: #666; }
 footer p { font-size: .75em; text-align: center; }
 
 #home { background: #47a0e5; padding-top: 7em; }
-#install { background: #d94a53; }
-#contact { background: #bfa5c4; }
+#install { background: #5ebd66; }
+#video { background: #bfa5c4; }
 
 label { display: block; font-size: .75em; margin: 0 0 .25em .5em; }
 input, textarea { margin: 0 0 1em; padding: .5em; outline: 0; border: 1px solid #666; width: 75%; max-width: 400px; font-family: 'Open Sans'; }
