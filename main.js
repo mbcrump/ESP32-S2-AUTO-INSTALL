@@ -17,7 +17,7 @@ function animatescroll(id) {
 
 function mSection() {
   var topHome = $('#home').offset().top,
-      topAbout = $('#about').offset().top,
+      topAbout = $('#install').offset().top,
       topPort = $('#portfolio').offset().top,
       topBlog = $('#blog').offset().top,
       topCont = $('#contact').offset().top,
@@ -37,7 +37,7 @@ function mSection() {
     $('#menu a:contains("Portfolio")').addClass('active');
   } else if ($(window).scrollTop() >= topAbout) {
     menuAll;
-    $('#menu a:contains("About")').addClass('active');
+    $('#menu a:contains("Install")').addClass('active');
   }
 }
 
