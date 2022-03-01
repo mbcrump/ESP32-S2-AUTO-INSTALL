@@ -27,34 +27,33 @@
     <section id="home">
   <div class="container">
     <h1>ESP32-S2 Stooged 2 Minute Install</h1><br><br>
-    <p>A version of the <a href="https://github.com/stooged/ESP32-Server-900u">ESP32-S2 Server 9.00</a> code created by Stooged.<br>
-       Inspired and created after watching this video by <a href="https://www.youtube.com/watch?v=YveqTTl0w24">Brian Lough</a>.<br>
+    <p>A web installer for a modified version of the <a href="https://github.com/stooged/ESP32-Server-900u">ESP32-S2 Server 9.00</a> created by Stooged.<br><br>
+       I learned about the web installer method after watching this video by <a href="https://www.youtube.com/watch?v=YveqTTl0w24">Brian Lough</a>.<br><br>
 
-       Modified image contains:<br>
+       I've modified the base image with the following:<br>
        <li>No Password for the PS4_WEB_AP Access Point</li>
        <li>USB Wait Time is now at 3 seconds vs 10 seconds</li>
-
-
+<br>
     </p>
 
     <br>
 
-    <p>Note: Payloads are not included. They can be added by connecting to this device via WiFi and 
-        navigating to the <a href="http://10.1.1.1/admin.html">admin.html</a> web interface. 
+	  <p><b>Note:</b> Payloads are not included in this release. They can be added by connecting to this device via WiFi and 
+        navigating to the <a href="http://10.1.1.1/admin.html">admin.html</a> web interface. <br>
     </p>
   </div>
 </section>  	  
 	  
 <section id="install">
   <div class="container">
-	   <div id="main" style="display: none;">
+	  <div id="main" style="display: none;">
 	  <h1>Install</h1>
         <script
             type="module"
             src="https://unpkg.com/esp-web-tools@7.1.0/dist/web/install-button.js?module"></script>
         <esp-web-install-button id="installButton" manifest="bins/manifest.json"></esp-web-install-button>
         <br><br><br><br>
-        <span>NOTE: Close the Arduino IDE or anything that uses the port or this won't work!</span>
+        <span>NOTE: Close the Arduino IDE or anything that uses the COM port or this won't work!</span>
     </div>
     <div id="notSupported" style="display: none;">
         Your browser does not support the Web Serial API. Try the latest Chrome browser (Version 98.0.4758.102 (Official Build) (64-bit)
@@ -67,10 +66,14 @@ is what I used)
 <section id="video">
   <div class="container">
 	  <h1>My YouTube Videos on the subject.</h>
+	  <h2>ESP32-S2 - which is what this utility is used for</h2>
 	  <iframe width="560" height="315" src="https://www.youtube.com/embed/kVvRV0i4Xr0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/ZfU_1_iIBIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/cQhh54tIvYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/SbQI_FsXdpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <h2>Raspberry Pi Zero W</h2>
+	  <iframe width="560" height="315" src="https://www.youtube.com/embed/cQhh54tIvYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>ESP32</h2>
+	  <iframe width="560" height="315" src="https://www.youtube.com/embed/ZfU_1_iIBIA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<h2>ESP8266</h2>
+	  <iframe width="560" height="315" src="https://www.youtube.com/embed/SbQI_FsXdpI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 </section>  	  
 	  
