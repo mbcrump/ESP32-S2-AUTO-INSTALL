@@ -18,9 +18,7 @@ function animatescroll(id) {
 function mSection() {
   var topHome = $('#home').offset().top,
       topAbout = $('#install').offset().top,
-      topPort = $('#portfolio').offset().top,
-      topBlog = $('#blog').offset().top,
-      topCont = $('#contact').offset().top,
+      topCont = $('#video').offset().top,
       menuAll = $('#menu a').removeClass('active');
   
   if ($(window).scrollTop() < topAbout) {
@@ -28,13 +26,7 @@ function mSection() {
     $('#menu a:contains("Home")').addClass('active');
   } else if ($(window).scrollTop() >= topCont) {
     menuAll;
-    $('#menu a:contains("Contact")').addClass('active');
-  } else if ($(window).scrollTop() >= topBlog) {
-    menuAll;
-    $('#menu a:contains("Blog")').addClass('active');
-  } else if ($(window).scrollTop() >= topPort) {
-    menuAll;
-    $('#menu a:contains("Portfolio")').addClass('active');
+    $('#menu a:contains("Video")').addClass('active');
   } else if ($(window).scrollTop() >= topAbout) {
     menuAll;
     $('#menu a:contains("Install")').addClass('active');
